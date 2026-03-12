@@ -128,6 +128,9 @@ function InputGem({
       >
         <MinusIcon disabled={formatValue(valueInput) <= 0} />
       </button>
+      <div className="flex items-center"></div>
+        <div className="w-1 h-4 bg-primary rounded-full"></div>
+        <div className="w-1 h-4 bg-primary rounded-full"></div>
       <input
         data-testid="input-gem"
         type="text"
@@ -146,6 +149,9 @@ function InputGem({
       >
         <PlusIcon disabled={formatValue(valueInput) >= getMaxValue()} />
       </button>
+      <div className="flex items-center"></div>
+        <div className="w-1 h-4 bg-primary rounded-full"></div>
+        <div className="w-1 h-4 bg-primary rounded-full"></div>
     </div>
   );
 }

@@ -25,6 +25,11 @@ function TabButtonGem({
     <div
       className={`w-35 rounded-lg bg-secondary p-0.5 flex items-center ${classNameContainer}`}
     >
+      <div className="flex items-center">
+        <div className="w-1 h-4 bg-primary rounded-full"></div>
+        <div className="w-1 h-4 bg-primary rounded-full"></div>
+        <div className="w-1 h-4 bg-primary rounded-full"></div>
+      </div>
       {tabs?.map((tab) => (
         <button
           key={tab.value}
@@ -38,6 +43,10 @@ function TabButtonGem({
           {tab.label}
         </button>
       ))}
+      <div className="flex items-center">
+        <div className="w-1 h-4 bg-primary rounded-full"></div>
+        <div className="w-1 h-4 bg-primary rounded-full"></div>
+      </div>
     </div>
   );
 }
